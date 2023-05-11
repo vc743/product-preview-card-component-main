@@ -18,7 +18,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![](qr-code-component-main/images/qr-code-component-solution.png)
+![](product-preview-card-component-main/images/product-preview-card-solution.png)
 
 ### Links
 
