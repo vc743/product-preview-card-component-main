@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Fraunces', serif;
+}
+
+.card{
+    padding: 20px;
+    max-width: 350px;
+}
+
+.product-image{
+    width: 350px;
+    height: 250px;
+    background: url(product-preview-card-component-main/images/image-product-mobile.jpg);
+    background-position: top center;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content{
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 10px 10px;
+}
+
+.card-subtitle{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .2rem;
+}
+
+.card-text{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.new-price{
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+.old-price{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.cart-button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 10px;
+    cursor: pointer;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: .3s;
+}
+.cart-icon{
+    margin-right: 10px;
+}
+
+.cart-button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+@media (min-width: 476px){
+    .card{
+        display: flex;
+        max-width: none;
+    }
+
+    .product-image{
+        width: 290px;
+        height: 460px;
+        background: url(product-preview-card-component-main/images/image-product-desktop.jpg);
+        background-position: top center;
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card-content{
+        max-width: 250px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .cart-button{
+        margin-top: 20px;
+    }
+}
